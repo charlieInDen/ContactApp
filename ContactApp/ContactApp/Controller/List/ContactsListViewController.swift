@@ -36,7 +36,8 @@ final class ContactsListViewController: UIViewController {
     
     fileprivate let lightGreen : UIColor = UIColor(red: 80.0/255.0, green: 227.0/255.0, blue: 194.0/255.0, alpha: 1.0)
     let alphabets: [String] = ContactManager.alphabet
-    
+    private let contactDetailVC = ContactDetailViewController(contact: Contact())
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -142,7 +143,9 @@ final class ContactsListViewController: UIViewController {
     
     // MARK: Add New Contact function
     @objc func addContact() {
-       
+        contactDetailVC.listVC = self
+        contactDetailVC.mode = .add
+        self.navigationController?.pushViewController(contactDetailVC, animated: true)
     }
     
     private func setupFailureAlert() {

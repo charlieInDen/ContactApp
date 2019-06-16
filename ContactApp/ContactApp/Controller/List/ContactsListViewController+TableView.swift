@@ -57,8 +57,14 @@ extension ContactsListViewController: UITableViewDelegate, UITableViewDataSource
     // MARK: Table View Delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let alphabet = self.contactsSections[indexPath.section]
         
         // display contact detail VC of selected contact
-       
+        if let contacts = self.contactsDict[alphabet] {
+            let contact = contacts[indexPath.row]
+            let contactDetailVC = ContactDetailViewController(contact: contact)
+            contactDetailVC.listVC = self
+            self.navigationController?.pushViewController(contactDetailVC, animated: true)
+        }
     }
 }
