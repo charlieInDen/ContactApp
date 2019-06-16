@@ -15,10 +15,20 @@
 		5AAC044A22B607FB00A6BA80 /* ContactAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC044922B607FB00A6BA80 /* ContactAppTests.swift */; };
 		5AAC045522B607FB00A6BA80 /* ContactAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC045422B607FB00A6BA80 /* ContactAppUITests.swift */; };
 		5AAC046622B6094500A6BA80 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC046522B6094500A6BA80 /* ContactsListViewController.swift */; };
-		5AAC046822B60ABF00A6BA80 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC046722B60ABF00A6BA80 /* ContactDetailViewController.swift */; };
 		5AAC046B22B60B7C00A6BA80 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC046A22B60B7C00A6BA80 /* Contact.swift */; };
 		5AAC046F22B60C8D00A6BA80 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC046E22B60C8D00A6BA80 /* ContactTableViewCell.swift */; };
-		5AAC047122B60CB000A6BA80 /* ContactDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC047022B60CB000A6BA80 /* ContactDetailsTableViewCell.swift */; };
+		5AAC047422B60EA400A6BA80 /* NavigationBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC047322B60EA400A6BA80 /* NavigationBarButtonItem.swift */; };
+		5AAC047722B60F2D00A6BA80 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC047622B60F2D00A6BA80 /* ContactManager.swift */; };
+		5AAC047922B60F4500A6BA80 /* ContactProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC047822B60F4500A6BA80 /* ContactProtocol.swift */; };
+		5AAC04B222B61DAF00A6BA80 /* ContactsListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC04B122B61DAF00A6BA80 /* ContactsListViewController+TableView.swift */; };
+		5AAC04B622B61F8F00A6BA80 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC04B522B61F8F00A6BA80 /* NetworkManager.swift */; };
+		5AAC04B822B6202B00A6BA80 /* ContactsListViewController+ContactManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC04B722B6202B00A6BA80 /* ContactsListViewController+ContactManagerDelegate.swift */; };
+		5AAC04BC22B624B600A6BA80 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAC04B922B624B500A6BA80 /* Realm.framework */; };
+		5AAC04BD22B624B600A6BA80 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAC04B922B624B500A6BA80 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5AAC04BE22B624B600A6BA80 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAC04BA22B624B500A6BA80 /* RealmSwift.framework */; };
+		5AAC04BF22B624B600A6BA80 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAC04BA22B624B500A6BA80 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5AAC04C022B624B600A6BA80 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAC04BB22B624B500A6BA80 /* PureLayout.framework */; };
+		5AAC04C122B624B600A6BA80 /* PureLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAC04BB22B624B500A6BA80 /* PureLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +48,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5AAC048922B6148000A6BA80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5AAC04BF22B624B600A6BA80 /* RealmSwift.framework in Embed Frameworks */,
+				5AAC04C122B624B600A6BA80 /* PureLayout.framework in Embed Frameworks */,
+				5AAC04BD22B624B600A6BA80 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5AAC043122B607F900A6BA80 /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAC043422B607F900A6BA80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,10 +79,17 @@
 		5AAC045422B607FB00A6BA80 /* ContactAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAppUITests.swift; sourceTree = "<group>"; };
 		5AAC045622B607FB00A6BA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AAC046522B6094500A6BA80 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
-		5AAC046722B60ABF00A6BA80 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		5AAC046A22B60B7C00A6BA80 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		5AAC046E22B60C8D00A6BA80 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
-		5AAC047022B60CB000A6BA80 /* ContactDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		5AAC047322B60EA400A6BA80 /* NavigationBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButtonItem.swift; sourceTree = "<group>"; };
+		5AAC047622B60F2D00A6BA80 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		5AAC047822B60F4500A6BA80 /* ContactProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProtocol.swift; sourceTree = "<group>"; };
+		5AAC04B122B61DAF00A6BA80 /* ContactsListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsListViewController+TableView.swift"; sourceTree = "<group>"; };
+		5AAC04B522B61F8F00A6BA80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5AAC04B722B6202B00A6BA80 /* ContactsListViewController+ContactManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsListViewController+ContactManagerDelegate.swift"; sourceTree = "<group>"; };
+		5AAC04B922B624B500A6BA80 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		5AAC04BA22B624B500A6BA80 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		5AAC04BB22B624B500A6BA80 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAC04BE22B624B600A6BA80 /* RealmSwift.framework in Frameworks */,
+				5AAC04C022B624B600A6BA80 /* PureLayout.framework in Frameworks */,
+				5AAC04BC22B624B600A6BA80 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,10 +123,14 @@
 		5AAC042822B607F900A6BA80 = {
 			isa = PBXGroup;
 			children = (
+				5AAC04BB22B624B500A6BA80 /* PureLayout.framework */,
+				5AAC04B922B624B500A6BA80 /* Realm.framework */,
+				5AAC04BA22B624B500A6BA80 /* RealmSwift.framework */,
 				5AAC043322B607F900A6BA80 /* ContactApp */,
 				5AAC044822B607FB00A6BA80 /* ContactAppTests */,
 				5AAC045322B607FB00A6BA80 /* ContactAppUITests */,
 				5AAC043222B607F900A6BA80 /* Products */,
+				5AAC047E22B6145D00A6BA80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,11 +147,11 @@
 		5AAC043322B607F900A6BA80 /* ContactApp */ = {
 			isa = PBXGroup;
 			children = (
+				5AAC047522B60F0700A6BA80 /* Others */,
 				5AAC046C22B60C3700A6BA80 /* Views */,
 				5AAC046922B60B5900A6BA80 /* Model */,
 				5AAC046222B6090800A6BA80 /* Controller */,
 				5AAC043422B607F900A6BA80 /* AppDelegate.swift */,
-				5AAC043622B607F900A6BA80 /* NavigationViewController.swift */,
 				5AAC043822B607F900A6BA80 /* Main.storyboard */,
 				5AAC043B22B607FB00A6BA80 /* Assets.xcassets */,
 				5AAC043D22B607FB00A6BA80 /* LaunchScreen.storyboard */,
@@ -141,7 +181,7 @@
 		5AAC046222B6090800A6BA80 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5AAC046422B6092700A6BA80 /* Detail */,
+				5AAC043622B607F900A6BA80 /* NavigationViewController.swift */,
 				5AAC046322B6091800A6BA80 /* List */,
 			);
 			path = Controller;
@@ -151,16 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				5AAC046522B6094500A6BA80 /* ContactsListViewController.swift */,
+				5AAC04B122B61DAF00A6BA80 /* ContactsListViewController+TableView.swift */,
+				5AAC04B722B6202B00A6BA80 /* ContactsListViewController+ContactManagerDelegate.swift */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		5AAC046422B6092700A6BA80 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				5AAC046722B60ABF00A6BA80 /* ContactDetailViewController.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		5AAC046922B60B5900A6BA80 /* Model */ = {
@@ -174,6 +208,7 @@
 		5AAC046C22B60C3700A6BA80 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5AAC047222B60E6900A6BA80 /* NavigationBar */,
 				5AAC046D22B60C5500A6BA80 /* ListCell */,
 			);
 			path = Views;
@@ -183,9 +218,49 @@
 			isa = PBXGroup;
 			children = (
 				5AAC046E22B60C8D00A6BA80 /* ContactTableViewCell.swift */,
-				5AAC047022B60CB000A6BA80 /* ContactDetailsTableViewCell.swift */,
 			);
 			path = ListCell;
+			sourceTree = "<group>";
+		};
+		5AAC047222B60E6900A6BA80 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				5AAC047322B60EA400A6BA80 /* NavigationBarButtonItem.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		5AAC047522B60F0700A6BA80 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				5AAC04B422B61F6900A6BA80 /* NetworkManager */,
+				5AAC04B322B61F5900A6BA80 /* Realm */,
+				5AAC047822B60F4500A6BA80 /* ContactProtocol.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		5AAC047E22B6145D00A6BA80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AAC04B322B61F5900A6BA80 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				5AAC047622B60F2D00A6BA80 /* ContactManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		5AAC04B422B61F6900A6BA80 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				5AAC04B522B61F8F00A6BA80 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +273,7 @@
 				5AAC042D22B607F900A6BA80 /* Sources */,
 				5AAC042E22B607F900A6BA80 /* Frameworks */,
 				5AAC042F22B607F900A6BA80 /* Resources */,
+				5AAC048922B6148000A6BA80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,12 +395,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAC047422B60EA400A6BA80 /* NavigationBarButtonItem.swift in Sources */,
 				5AAC046F22B60C8D00A6BA80 /* ContactTableViewCell.swift in Sources */,
 				5AAC046622B6094500A6BA80 /* ContactsListViewController.swift in Sources */,
 				5AAC043722B607F900A6BA80 /* NavigationViewController.swift in Sources */,
+				5AAC04B822B6202B00A6BA80 /* ContactsListViewController+ContactManagerDelegate.swift in Sources */,
+				5AAC047922B60F4500A6BA80 /* ContactProtocol.swift in Sources */,
 				5AAC046B22B60B7C00A6BA80 /* Contact.swift in Sources */,
-				5AAC046822B60ABF00A6BA80 /* ContactDetailViewController.swift in Sources */,
-				5AAC047122B60CB000A6BA80 /* ContactDetailsTableViewCell.swift in Sources */,
+				5AAC04B622B61F8F00A6BA80 /* NetworkManager.swift in Sources */,
+				5AAC047722B60F2D00A6BA80 /* ContactManager.swift in Sources */,
+				5AAC04B222B61DAF00A6BA80 /* ContactsListViewController+TableView.swift in Sources */,
 				5AAC043522B607F900A6BA80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +581,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ContactApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +603,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ContactApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
